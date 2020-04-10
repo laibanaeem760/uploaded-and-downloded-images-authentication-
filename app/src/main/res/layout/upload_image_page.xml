@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".upload_page">
+
+    <ImageView
+        android:id="@+id/IconIV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/green" />
+
+
+    <EditText
+        android:id="@+id/imageNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IconIV"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFCCCC"
+        android:hint="Enter Image Name which you want"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccentDark"
+        android:textStyle="italic"/>
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_arrow_back_black_24dp" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/progressbar"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:visibility="invisible" />
+
+
+    <Button
+        android:id="@+id/imageUploadingBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:paddingStart="10dp"
+        android:text="Upload Image"
+        android:background="#66FF66"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />/>
+
+
+</RelativeLayout>
